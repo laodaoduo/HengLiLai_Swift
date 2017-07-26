@@ -13,7 +13,7 @@ class ProfileViewController: BaseViewController,UICollectionViewDataSource,UICol
     
     /// collectionView的代理方法
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 9
+        return 59
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
@@ -43,7 +43,7 @@ class ProfileViewController: BaseViewController,UICollectionViewDataSource,UICol
         
         let layout = UICollectionViewFlowLayout()
         layout.itemSize = CGSize(width: 50, height: 50)
-        let collectionView = UICollectionView(frame: CGRect(x: 0,y:0,width :400,height :400), collectionViewLayout: layout)
+        let collectionView = UICollectionView(frame: CGRect(x: 0,y:0,width :300,height :400), collectionViewLayout: layout)
         collectionView.delegate = self
         collectionView.dataSource = self
         collectionView.backgroundColor = UIColor.yellow
